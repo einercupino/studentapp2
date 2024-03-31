@@ -5,7 +5,7 @@ const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   devtool: 'inline-source-map',
   output: {
-    publicPath: "http://localhost:3002/",
+    publicPath: "https://6608be90d2b5ac5761a8c66f--einerstudentapp1.netlify.app/",
   },
 
   resolve: {
@@ -45,7 +45,7 @@ module.exports = (_, argv) => ({
       name: "studentapp2",
       filename: "remoteEntry.js",
       remotes: {
-        studentapp1: "studentapp1@http://localhost:3001/remoteEntry.js"
+        studentapp1: "studentapp1@https://6608be90d2b5ac5761a8c66f--einerstudentapp1.netlify.app/remoteEntry.js"
       },
       exposes: {},
       shared: {
