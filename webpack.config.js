@@ -5,7 +5,7 @@ const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   devtool: 'inline-source-map',
   output: {
-    publicPath: '/'
+    publicPath: 'auto',
   },
 
   resolve: {
